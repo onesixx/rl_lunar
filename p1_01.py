@@ -1,8 +1,6 @@
-#import gym
-import gymnasium
-# Create the environment
-#env = gym.make('LunarLander-v2')  # continuous: LunarLanderContinuous-v2
-env = gymnasium.make('LunarLander-v2')
+import gymnasium    # instead gym
+# Create the environment [ continuous: LunarLanderContinuous-v2]
+env = gymnasium.make('LunarLander-v2')   # instead gym.make()
 # required before you can step the environment
 env.reset()
 # (array([ 4.2467116e-04,  1.4092686e+00,  4.3003265e-02, -7.3403455e-02,
